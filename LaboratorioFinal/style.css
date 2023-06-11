@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: #242933;
+    font-family: 'Kanit';
+    color: #abb9df;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-weight: bolder;
+    color: azure;
+}
+
+fieldset{
+    width: auto;
+    padding: 5px 20px 20px 20px;
+}
+
+legend{
+    font-weight: bold;
+    color: white;
+}
+
+input{
+    background-color: #abb9df;
+    font-family: 'Kanit';
+    height: 20px;
+    width: 300px;
+}
+
+.div-input{
+    padding: 5px;
+}
+
+.datos-login{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mensajeError{
+    color: rgb(255, 55, 55);
+    font-size: 13px;
+}
+
+.valido{
+    border: 2px solid #4ECA64;
+}
+
+.invalido{
+    border: 2px solid #DB5A5A;
+}
+
+.btn-submit{
+    width: auto;
+    height: 40px;
+    font-family: 'Kanit';
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgb(8, 8, 83);
+    color: white;
+}
+
+#consulta{
+    margin-top: 10px;
+}
+
+.btn-submit:hover{
+    background-color: white;
+    color: rgb(8, 8, 83);
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    color: white;
+    margin-bottom: 15px;
+}
+
+th, td {
+    border: 2px solid rgba(98, 184, 255, 0.89);
+    padding: 10px;
+}

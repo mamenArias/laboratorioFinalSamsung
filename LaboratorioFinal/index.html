@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/images.ico">
+    <title>Laboratorio Final Samsung</title>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="bloque-form">
+        <h2>Inserte sus datos:</h2>
+        <form class="formulario" onsubmit="return validarNombre(), validarPrimerApellido(), validarSegundorApellido(), validarEmail(), validarLogin(), validarPassword(), validarFormulario()"
+        method="post" action="validarformulario.php">
+            <fieldset class="datos-personales">
+                <legend>Datos Personales:</legend>
+                <div class="div-input">
+                    <label>Nombre: </label><br/>
+                    <input type="text" name="nombre" id="nombre"><br/>
+                    <span id="errorNombre" class="mensajeError"></span>
+                </div>
+                <div class="div-input">
+                    <label>Primer apellido: </label><br/>
+                    <input type="text" name="primerApellido" id="primerApellido"><br/>
+                    <span id="errorPrimerApellido" class="mensajeError"></span>
+                </div>
+                <div class="div-input">
+                    <label>Segundo apellido: </label><br/>
+                    <input type="text" name="segundoApellido" id="segundoApellido"><br/>
+                    <span id="errorSegundoApellido" class="mensajeError"></span>
+                </div>
+                <div class="div-input">
+                    <label>Email: </label><br/>
+                    <input type="email" name="email" id="email"><br/>
+                    <span id="errorEmail" class="mensajeError"></span>
+                </div>
+            </fieldset>
+            <fieldset class="datos-login">
+                <legend>Datos de Inicio de sesión:</legend>
+                <div class="div-input">
+                    <label>Login: </label><br/>
+                    <input type="text" name="login" id="login"><br/>
+                    <span id="errorLogin" class="mensajeError"></span>
+                </div>
+                <div class="div-input">
+                    <label>Contraseña: </label><br/>
+                    <input type="password" name="password" id="password"><br/>
+                    <span id="errorPassword" class="mensajeError"></span>
+                </div>
+            </fieldset>
+            <input type="submit" name="submit" class="btn-submit" value="Registrar Datos">
+        </form>
+        <button class="btn-submit" id="consulta" onclick="consultaDatos()">Consultar Datos</button>
+    </div>
+</body>
+</html>
