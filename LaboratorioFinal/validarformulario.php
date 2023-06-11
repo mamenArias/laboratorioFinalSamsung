@@ -31,10 +31,10 @@
 
         $servername = 'localhost';
         $username = 'root';
-        $password = '';
+        $passwordDB = '';
         $dbname = 'laboratoriofinal';
 
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($servername, $username, $passwordDB, $dbname);
         if ($conn->connect_error){
             die('Error en la conexión con la base de datos: ' . $conn->connect_error);
         }
